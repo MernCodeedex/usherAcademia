@@ -55,9 +55,11 @@
             color: white;
             margin-bottom: 20px;
             height: 245px;
+            align-items: center;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            border-radius: 5px;
         }
 
         .card img {
@@ -86,7 +88,7 @@
             border-radius: 5px;
             margin-bottom: 70px;
             width: 100px;
-            margin-left: 48px;
+            margin-left: 0px;
         }
 
         .card button:hover {
@@ -146,6 +148,24 @@
                 width: 100%;
                 display: block;
                 margin-bottom: 20px;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            .column {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            .card button {
+                margin-left: 0;
+            }
+        }
+        @media screen and (max-width: 375px){
+            .column{
+                width: 95%;
+            }
+            .card button{
+                margin-left: 106px;
             }
         }
     </style>
@@ -215,84 +235,109 @@
                 <div class="card">
                     <img src="img/alliedhealth.png" alt="Allied Health" />
                     <p>Allied Health</p>
-                    <button>Apply</button>
+                    <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                        <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                    </a>
                 </div>
+                
             </div>
             <div class="column">
                 <div class="card">
                     <img src="img/Architecture.png" alt="Architecture" />
                     <p>Architecture</p>
-                    <button>Apply</button>
+                    <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                        <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                    </a>
                 </div>
             </div>
             <div class="column">
                 <div class="card">
                     <img src="img/computer.png" alt="computer" />
                     <p>Computer</p>
-                    <button>Apply</button>
+                    <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                        <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                    </a>
                 </div>
             </div>
             <div class="column">
                 <div class="card">
                     <img src="img/Agriculture.png" alt="Agriculture" />
                     <p>Agriculture</p>
-                    <button>Apply</button>
+                    <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                        <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                    </a>
                 </div>
             </div>
             <div class="column">
                 <div class="card">
                     <img src="img/Aviation.png" alt="Aviation" />
                     <p>Aviation</p>
-                    <button>Apply</button>
+                    <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                        <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                    </a>
                 </div>
             </div>
             <div class="column">
                 <div class="card">
                     <img src="img/Designing.png" alt="Designing" />
                     <p>Designing</p>
-                    <button>Apply</button>
+                    <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                        <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                    </a>
                 </div>
             </div>
             <div class="column">
                 <div class="card">
                     <img src="img/Humanity.png" alt="Humanity" />
                     <p>Arts and Humanity</p>
-                    <button>Apply</button>
+                    <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                        <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                    </a>
                 </div>
             </div>
             <div class="column">
                 <div class="card">
                     <img src="img/Commerce.png" alt="Commerce" />
                     <p>Commerce</p>
-                    <button>Apply</button>
+                    <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                        <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                    </a>
                 </div>
             </div>
             <div class="column">
                 <div class="card">
                     <img src="img/Ayurveda.png" alt="Ayurveda" />
                     <p>Ayurveda</p>
-                    <button>Apply</button>
+                    <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                        <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                    </a>
                 </div>
             </div>
             <div class="column">
                 <div class="card">
                     <img src="img/Audiology.png" alt="Audiology" />
                     <p>Audiology</p>
-                    <button>Apply</button>
+                    <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                        <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                    </a>
                 </div>
             </div>
             <div class="column">
                 <div class="card">
                     <img src="img/Dental.png" alt="Dental" />
                     <p>Dental</p>
-                    <button>Apply</button>
+                    <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                        <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                    </a>
                 </div>
             </div>
             <div class="column">
                 <div class="card">
                     <img src="img/Engineering.png" alt="Engineering" />
                     <p>Engineering</p>
-                    <button>Apply</button>
+                    <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                        <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                    </a>
                 </div>
             </div>
 <!-- Load more -->
@@ -306,28 +351,36 @@
                     <div class="card">
                         <img src="img/Earth science.png" alt="Earth science" />
                         <p>Earth Science</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <img src="img/GNM Nursing.png" alt="Nursing" />
                         <p>GNM Nursing</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <img src="img/Homeopathy.png" alt="Homeopathy" />
                         <p>Homeopathy</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <img src="img/ITC.png" alt="ITC" />
                         <p>ITC</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -338,28 +391,36 @@
                     <div class="card">
                         <img src="img/ITI Industrual Training Institute.png" alt="ITI" />
                         <p>ITI Industrual Training Institute</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <img src="img/Law.png" alt="Law" />
                         <p>Law</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <img src="img/Life Science.png" alt="Life science" />
                         <p>Life Science</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <img src="img/Architecture.png" alt="Management" />
                         <p>Management</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
  </div>
@@ -370,28 +431,36 @@
                     <div class="card">
                         <img src="img/Marine.png" alt="Marine" />
                         <p>Marine</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <img src="img/MBA.png" alt="MBA" />
                         <p>MBA</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <img src="img/Media and Communication.png" alt="Media and Communication" />
                         <p>Media and Communication</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <img src="img/Medical.png" alt="Medical" />
                         <p>Medical</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
  </div>
@@ -402,28 +471,36 @@
                     <div class="card">
                         <img src="img/Naturopathy And Yogic Science.png" alt="Naturopathy And Yogic Science" />
                         <p>Naturopathy And Yogic Science</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <img src="img/Nursing.png" alt="Nursing" />
                         <p>Nursing</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <img src="img/Occupational Therapy.png" alt="Occupational Therapy" />
                         <p>Occupational Therapy</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <img src="img/Paramedical.png" alt="Paramedical" />
                         <p>Paramedical</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
  </div>
@@ -435,49 +512,63 @@
                     <div class="card">
                         <img src="img/Pharmacy.png" alt="Pharmacy" />
                         <p>Pharmacy</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <img src="img/Occupational Therapy.png" alt="Occupational Therapy" />
                         <p>Occupational Therapy</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <img src="img/Paramedical.png" alt="Paramedical" />
                         <p>Paramedical</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <img src="img/Pharmacy.png" alt="Pharmacy" />
                         <p>Pharmacy</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <img src="img/Physiotherapy.png" alt="Physiotherapy" />
                         <p>Physiotherapy</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <img src="img/Polytechnic.png" alt="Polytechnic" />
                         <p>Polytechnic</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <img src="img/Science.png" alt="Science" />
                         <p>Science</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
                 </div>
@@ -488,35 +579,45 @@
                     <div class="card">
                         <img src="img/Siddha.png" alt="Siddha" />
                         <p>Siddha</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <img src="img/Social Work.png" alt="Social Work" />
                         <p>Social Work</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <img src="img/Unani.png" alt="Unani" />
                         <p>Unani</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <img src="img/Veterinary.png" alt="Veterinary" />
                         <p>Veterinary</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <img src="img/Vocational Study.png" alt="Vocational" />
                         <p>Vocational</p>
-                        <button>Apply</button>
+                        <a href="https://wa.me/+918590203073" target="_blank" class="whatsapp-link">
+                            <button> <i class="fab fa-whatsapp"></i> Apply</i></button>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
