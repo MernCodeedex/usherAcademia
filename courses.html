@@ -6,7 +6,7 @@
     <title>
         <img src="img/usherlogo.png" alt="Usher Logo" class="me-3"> Usher Academia
     </title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
@@ -16,7 +16,9 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -34,19 +36,264 @@
 
     <style>
         .admissions-section {
-    background-image: url("img/instit1.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 500px; 
-    object-fit: fill;
-    color: #fff; 
+            background-image: url("img/instit1.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            object-fit: fill;
+            color: #fff;
+        }
+
+        .carousel {
+            display: block;
+            text-align: left;
+            position: relative;
+            margin-bottom: 22px;
+        }
+
+        .carousel>input {
+            clip: rect(1px, 1px, 1px, 1px);
+            clip-path: inset(50%);
+            height: 1px;
+            width: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            border: 0;
+            pointer-events: none;
+        }
+
+        .carousel>input:nth-of-type(7):checked~.carousel__slides .carousel__slide:first-of-type {
+            margin-left: -500%;
+        }
+
+        .carousel>input:nth-of-type(6):checked~.carousel__slides .carousel__slide:first-of-type {
+            margin-left: -500%;
+        }
+
+        .carousel>input:nth-of-type(5):checked~.carousel__slides .carousel__slide:first-of-type {
+            margin-left: -400%;
+        }
+
+        .carousel>input:nth-of-type(4):checked~.carousel__slides .carousel__slide:first-of-type {
+            margin-left: -300%;
+        }
+
+        .carousel>input:nth-of-type(3):checked~.carousel__slides .carousel__slide:first-of-type {
+            margin-left: -200%;
+        }
+
+        .carousel>input:nth-of-type(2):checked~.carousel__slides .carousel__slide:first-of-type {
+            margin-left: -100%;
+        }
+
+        .carousel>input:nth-of-type(1):checked~.carousel__slides .carousel__slide:first-of-type {
+            margin-left: 0%;
+        }
+
+        .carousel>input:nth-of-type(1):checked~.carousel__thumbnails li:nth-of-type(1) {
+            box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+        }
+
+        .carousel>input:nth-of-type(2):checked~.carousel__thumbnails li:nth-of-type(2) {
+            box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+        }
+
+        .carousel>input:nth-of-type(3):checked~.carousel__thumbnails li:nth-of-type(3) {
+            box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+        }
+
+        .carousel>input:nth-of-type(4):checked~.carousel__thumbnails li:nth-of-type(4) {
+            box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+        }
+
+        .carousel>input:nth-of-type(5):checked~.carousel__thumbnails li:nth-of-type(5) {
+            box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+        }
+
+        .carousel>input:nth-of-type(6):checked~.carousel__thumbnails li:nth-of-type(6) {
+            box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+        }
+
+        .carousel>input:nth-of-type(7):checked~.carousel__thumbnails li:nth-of-type(7) {
+            box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+        }
+
+        .carousel__slides {
+            position: relative;
+            z-index: 1;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            display: flex;
+        }
+
+        .carousel__slide {
+            position: relative;
+            display: block;
+            flex: 1 0 100%;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            transition: all 300ms ease-out;
+            /* vertical-align: top; */
+            box-sizing: border-box;
+            white-space: normal;
+        }
+
+        .carousel__slide figure {
+            display: flex;
+            margin: 0;
+        }
+
+        .carousel__slide div {
+            position: relative;
+            width: 100%;
+        }
+
+        .carousel__slide div:before {
+            display: block;
+            content: "";
+            width: 100%;
+            padding-top: 66.6666666667%;
+        }
+
+        .carousel__slide div>img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .carousel__slide img {
+            display: block;
+            flex: 1 1 auto;
+            object-fit: cover;
+        }
+
+        .carousel__slide figcaption {
+            align-self: flex-end;
+            padding: 20px 20px 0 20px;
+            flex: 0 0 auto;
+            width: 25%;
+            min-width: 150px;
+        }
+
+        .carousel__slide .credit {
+            margin-top: 1rem;
+            color: rgba(0, 0, 0, 0.5);
+            display: block;
+        }
+
+        /* .carousel__slide.scrollable {
+  overflow-y: scroll;
+} */
+
+        .carousel__thumbnails {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            margin: 0 -10px;
+        }
+
+        .carousel__slides+.carousel__thumbnails {
+            margin-top: 20px;
+        }
+
+        .carousel__thumbnails li {
+            flex: 1 1 auto;
+            max-width: calc((100% / 6) - 20px);
+            margin: 0 10px;
+            transition: all 300ms ease-in-out;
+        }
+
+        .carousel__thumbnails label {
+            display: block;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .carousel__thumbnails label:before {
+            display: block;
+            content: "";
+            width: 100%;
+            padding-top: 100%;
+        }
+
+        .carousel__thumbnails label>img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .carousel__thumbnails label:hover,
+        .carousel__thumbnails label:focus {
+            cursor: pointer;
+        }
+
+        .carousel__thumbnails label:hover img,
+        .carousel__thumbnails label:focus img {
+            box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+            transition: all 300ms ease-in-out;
+        }
+
+        .carousel__thumbnails img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .carousel__slide figcaption {
+                width: 100%;
+                padding: 10px;
+            }
+
+            .carousel__thumbnails {
+                flex-direction: column;
+            }
+
+            .carousel__thumbnails li {
+                max-width: 100%;
+                margin: 10px 0;
+            }
+
+            .carousel__thumbnails label:before {
+                padding-top: 80%;
+                /* Adjust aspect ratio for thumbnails */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .carousel__slide figcaption {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            .carousel__thumbnails label:before {
+                padding-top: 75%;
+                /* Adjust aspect ratio for thumbnails */
+            }
         }
     </style>
 </head>
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
@@ -70,14 +317,16 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu fade-down m-0">
+                        <a href="ourCourses.html" class="dropdown-item">Courses</a>
                         <a href="team.html" class="dropdown-item">Admissions</a>
                         <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
+                        <!-- <a href="404.html" class="dropdown-item">404 Page</a> -->
                     </div>
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i
+                    class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -104,7 +353,7 @@
 
 
     <!-- Categories Start -->
-    <div class="container-xxl py-5 category">
+    <!-- <div class="container-xxl py-5 category">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">Institutions</h6>
@@ -222,7 +471,141 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+    <div>
+        <div class="container-xxl py-5 category">
+            <section>
+                <div class="container">
+                    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                        <h6 class="section-title bg-white text-center text-primary px-3">Institutions</h6>
+                        <h1 class="mb-5">Affiliated Institutions</h1>
+                    </div>
+                    <div class="carousel">
+                        <input type="radio" name="slides" checked="checked" id="slide-1">
+                        <input type="radio" name="slides" id="slide-2">
+                        <input type="radio" name="slides" id="slide-3">
+                        <input type="radio" name="slides" id="slide-4">
+                        <input type="radio" name="slides" id="slide-5">
+                        <input type="radio" name="slides" id="slide-6">
+                        <input type="radio" name="slides" id="slide-7">
+                        <ul class="carousel__slides">
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="img/Acharya.png" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Acharya Institute Of Graduate Studies
+                                        <span class="credit">Bangalore</span>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="img/Christ.jpg" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Christ University
+                                        <span class="credit">Bangalore</span>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="img/Jain.jpeg" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Jain Deemed-to-be University
+                                        <span class="credit">Bangalore</span>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="img/koshy.png" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Koshys Group Of Institution
+                                        <span class="credit">Bangalore</span>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="img/srm.jpeg" alt="">
+                                    </div>
+                                    <figcaption>
+                                        SRM Institute Of Science And Technology
+                                        <span class="credit"></span>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="img/Reva.jpg" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Reva University
+                                        <span class="credit">Bangalore</span>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="img/Harsha.jpeg" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Harsha University
+                                        <span class="credit">Bangalore</span>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <!-- <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="img/Harsha.jpeg" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Harsha Institutions
+                                        <span class="credit">Bangalore</span>
+                                    </figcaption>
+                                </figure>
+                            </li> -->
+                        </ul>
+                        <ul class="carousel__thumbnails">
+                            <li>
+                                <label for="slide-1"><img src="img/Acharya.png" alt=""></label>
+                            </li>
+                            <li>
+                                <label for="slide-2"><img src="img/Christ.jpg" alt=""></label>
+                            </li>
+                            <li>
+                                <label for="slide-3"><img src="img/Jain.jpeg" alt=""></label>
+                            </li>
+                            <li>
+                                <label for="slide-4"><img src="img/koshy.png" alt=""></label>
+                            </li>
+                            <li>
+                                <label for="slide-5"><img src="img/srm.jpeg" alt=""></label>
+                            </li>
+                            <li>
+                                <label for="slide-6"><img src="img/Reva.jpg" alt=""></label>
+                            </li>
+                            <li>
+                                <label for="slide-7"><img src="img/Harsha.jpeg" alt=""></label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </div>
+    </div>
     <!-- Categories Start -->
 
 
@@ -368,7 +751,8 @@
         </div>
     </div> -->
     <!-- Testimonial End -->
-        
+
+
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -387,32 +771,37 @@
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 8590203073</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 8891903073</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>usheracademia@gmail.com</p>
-                    <p class="mb-2"><i class="fa fas fa-map-marker-alt me-3"></i>Pattambi, Perinthalmanna road , near Pattambi higer secondary school</p>
+                    <p class="mb-2"><i class="fa fas fa-map-marker-alt me-3"></i>Pattambi, Perinthalmanna road , near
+                        Pattambi higer secondary school</p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=61556781394979&mibextid=YMEMSu"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/usher.academia_/?locale=us&hl=am-et"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://www.facebook.com/profile.php?id=61556781394979&mibextid=YMEMSu"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://www.instagram.com/usher.academia_/?locale=us&hl=am-et"><i
+                                class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Gallery</h4>
                     <div class="row g-2 pt-2">
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="img/Gallery1.jpg" alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="img/Gallery2.jpg" alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="img/Gallery3.jpg" alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="img/Gallery4.jpg" alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="img/Gallery5.jpg" alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="img/Gallery6.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -421,7 +810,8 @@
                     <p>Signup to choose the ideal professional path</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
                         <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        <button type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
                     </div>
                 </div>
             </div>
@@ -433,7 +823,8 @@
                         &copy; <a class="border-bottom" href="#">Usher Academia</a>, All Right Reserved.
 
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://codeedextechnologies.com">Codeedex Technologies</a><br><br>
+                        Designed By <a class="border-bottom" href="https://codeedextechnologies.com">Codeedex
+                            Technologies</a><br><br>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">

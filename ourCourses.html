@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Usher Academia
+    </title>
+    <link rel="icon" href="img/usherlogo.png" type="image/icon type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <!-- <link href="img/favicon.ico" rel="icon"> -->
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .container-xxl {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #072f5a;
+            color: white;
+            margin-bottom: 20px;
+            height: 245px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card img {
+            max-width: 100%;
+            max-height: 100px;
+            object-fit: contain;
+            filter: brightness(0) invert(1) !important;
+        }
+
+        .card p {
+            flex-grow: 1;
+            margin: 10px 0;
+        }
+
+        .card button {
+            background-color: yellow;
+            color: #0062cc;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            /* margin: 4px 2px; */
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 70px;
+            width: 100px;
+            margin-left: 48px;
+        }
+
+        .card button:hover {
+            background-color: #004bb5;
+            color: white;
+        }
+
+        .column {
+            width: 250px;
+            display: inline-block;
+            margin: 10px;
+        }
+        .hidden {
+            display: none;
+        }
+
+        .view-more {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .view-more button {
+            background-color: yellow;
+            color: #0062cc;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .view-more button:hover {
+            background-color: #004bb5;
+            color: white;
+        }
+        @media screen and (max-width: 1200px) {
+            .column {
+                width: 33.33%;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .column {
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .col-xxl-2,
+            .col-lg-3,
+            .col-md-4,
+            .col-sm-6 {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <!-- <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div> -->
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary"><img src="img/usherlogo.png" alt="Usher Logo" class="me-3" height="65px"></h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="courses.html" class="nav-item nav-link">Institutions</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="ourCourses.html" class="dropdown-item">Courses</a>
+                        <a href="team.html" class="dropdown-item">Admissions</a>
+                        <a href="testimonial.html" class="dropdown-item active">Testimonial</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i
+                    class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">Our Courses</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Courses</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <div class="container-xxl py-5">
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="img/alliedhealth.png" alt="Allied Health" />
+                    <p>Allied Health</p>
+                    <button>Apply</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="img/Architecture.png" alt="Architecture" />
+                    <p>Architecture</p>
+                    <button>Apply</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="img/computer.png" alt="computer" />
+                    <p>Computer</p>
+                    <button>Apply</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="img/Agriculture.png" alt="Agriculture" />
+                    <p>Agriculture</p>
+                    <button>Apply</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="img/Aviation.png" alt="Aviation" />
+                    <p>Aviation</p>
+                    <button>Apply</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="img/Designing.png" alt="Designing" />
+                    <p>Designing</p>
+                    <button>Apply</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="img/Humanity.png" alt="Humanity" />
+                    <p>Arts and Humanity</p>
+                    <button>Apply</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="img/Commerce.png" alt="Commerce" />
+                    <p>Commerce</p>
+                    <button>Apply</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="img/Ayurveda.png" alt="Ayurveda" />
+                    <p>Ayurveda</p>
+                    <button>Apply</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="img/Audiology.png" alt="Audiology" />
+                    <p>Audiology</p>
+                    <button>Apply</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="img/Dental.png" alt="Dental" />
+                    <p>Dental</p>
+                    <button>Apply</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="img/Engineering.png" alt="Engineering" />
+                    <p>Engineering</p>
+                    <button>Apply</button>
+                </div>
+            </div>
+<!-- Load more -->
+
+<div id="hidden-content">
+
+
+
+            <div  class="row hidden">
+                <div class="column">
+                    <div class="card">
+                        <img src="img/Earth science.png" alt="Earth science" />
+                        <p>Earth Science</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="img/GNM Nursing.png" alt="Nursing" />
+                        <p>GNM Nursing</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="img/Homeopathy.png" alt="Homeopathy" />
+                        <p>Homeopathy</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="img/ITC.png" alt="ITC" />
+                        <p>ITC</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+            </div>
+
+
+ <div class="row hidden">
+                <div class="column">
+                    <div class="card">
+                        <img src="img/ITI Industrual Training Institute.png" alt="ITI" />
+                        <p>ITI Industrual Training Institute</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="img/Law.png" alt="Law" />
+                        <p>Law</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="img/Life Science.png" alt="Life science" />
+                        <p>Life Science</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="img/Architecture.png" alt="Management" />
+                        <p>Management</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+ </div>
+
+
+ <div  class="row hidden">
+                <div class="column">
+                    <div class="card">
+                        <img src="img/Marine.png" alt="Marine" />
+                        <p>Marine</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="img/MBA.png" alt="MBA" />
+                        <p>MBA</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="img/Media and Communication.png" alt="Media and Communication" />
+                        <p>Media and Communication</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="img/Medical.png" alt="Medical" />
+                        <p>Medical</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+ </div>
+
+
+ <div class="row hidden">
+                <div class="column">
+                    <div class="card">
+                        <img src="img/Naturopathy And Yogic Science.png" alt="Naturopathy And Yogic Science" />
+                        <p>Naturopathy And Yogic Science</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="img/Nursing.png" alt="Nursing" />
+                        <p>Nursing</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="img/Occupational Therapy.png" alt="Occupational Therapy" />
+                        <p>Occupational Therapy</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="img/Paramedical.png" alt="Paramedical" />
+                        <p>Paramedical</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+ </div>
+
+
+
+                <div class="row hidden">
+                <div class="column">
+                    <div class="card">
+                        <img src="img/Pharmacy.png" alt="Pharmacy" />
+                        <p>Pharmacy</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="img/Occupational Therapy.png" alt="Occupational Therapy" />
+                        <p>Occupational Therapy</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="img/Paramedical.png" alt="Paramedical" />
+                        <p>Paramedical</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="img/Pharmacy.png" alt="Pharmacy" />
+                        <p>Pharmacy</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="img/Physiotherapy.png" alt="Physiotherapy" />
+                        <p>Physiotherapy</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="img/Polytechnic.png" alt="Polytechnic" />
+                        <p>Polytechnic</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="img/Science.png" alt="Science" />
+                        <p>Science</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                </div>
+            
+
+            <div class="row hidden">
+                <div class="column">
+                    <div class="card">
+                        <img src="img/Siddha.png" alt="Siddha" />
+                        <p>Siddha</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="img/Social Work.png" alt="Social Work" />
+                        <p>Social Work</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="img/Unani.png" alt="Unani" />
+                        <p>Unani</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="img/Veterinary.png" alt="Veterinary" />
+                        <p>Veterinary</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="img/Vocational Study.png" alt="Vocational" />
+                        <p>Vocational</p>
+                        <button>Apply</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="img/other courses.png" alt="other course"/>
+                        <p>Other Courses</p>
+                        <a  href="contact.html"><button style="margin-left: 10px;">Apply</button></a>
+                    </div>
+                </div>
+            </div>
+                </div>
+            <div class="view-more">
+                <button onclick="showMore()">Load More</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+       function showMore() {
+    console.log("Button clicked!");
+    const hiddenContent = document.getElementById('hidden-content');
+    const hiddenCards = hiddenContent.querySelectorAll('.row.hidden');
+
+    console.log("Hidden cards:", hiddenCards);
+    
+    // Show 4 more cards each time
+    for (let i = 0; i < 4; i++) {
+        if (hiddenCards[i]) {
+            hiddenCards[i].classList.remove('hidden');
+        }
+    }
+
+    // Hide the button if all cards are visible
+    if (hiddenContent.querySelectorAll('.row.hidden').length === 0) {
+        document.querySelector('.view-more').style.display = 'none';
+    }
+}
+
+
+//         function showMore() {
+//     const hiddenCards = document.querySelectorAll('#hidden-content .column.hidden');
+    
+//     let count = 0;
+//     hiddenCards.forEach(card => {
+//         if (count < 4) {
+//             console.log(card.classList);
+//             card.classList.remove('hidden');
+//             console.log(card.classList);
+//             count++;
+//         }
+//     });
+// }
+
+
+
+    </script>
+</body>
+
+</html>
