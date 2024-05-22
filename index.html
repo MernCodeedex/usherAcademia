@@ -115,191 +115,7 @@
         margin-bottom: 22px;
     }
 
-    .carousel>input {
-        clip: rect(1px, 1px, 1px, 1px);
-        clip-path: inset(50%);
-        height: 1px;
-        width: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        border: 0;
-        pointer-events: none;
-    }
-    .carousel>input:nth-of-type(7):checked~.carousel__slides .carousel__slide:first-of-type {
-        margin-left: -600%;
-    }
-
-    .carousel>input:nth-of-type(6):checked~.carousel__slides .carousel__slide:first-of-type {
-        margin-left: -500%;
-    }
-
-    .carousel>input:nth-of-type(5):checked~.carousel__slides .carousel__slide:first-of-type {
-        margin-left: -400%;
-    }
-
-    .carousel>input:nth-of-type(4):checked~.carousel__slides .carousel__slide:first-of-type {
-        margin-left: -300%;
-    }
-
-    .carousel>input:nth-of-type(3):checked~.carousel__slides .carousel__slide:first-of-type {
-        margin-left: -200%;
-    }
-
-    .carousel>input:nth-of-type(2):checked~.carousel__slides .carousel__slide:first-of-type {
-        margin-left: -100%;
-    }
-
-    .carousel>input:nth-of-type(1):checked~.carousel__slides .carousel__slide:first-of-type {
-        margin-left: 0%;
-    }
-
-    .carousel>input:nth-of-type(1):checked~.carousel__thumbnails li:nth-of-type(1) {
-        box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
-    }
-
-    .carousel>input:nth-of-type(2):checked~.carousel__thumbnails li:nth-of-type(2) {
-        box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
-    }
-
-    .carousel>input:nth-of-type(3):checked~.carousel__thumbnails li:nth-of-type(3) {
-        box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
-    }
-
-    .carousel>input:nth-of-type(4):checked~.carousel__thumbnails li:nth-of-type(4) {
-        box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
-    }
-
-    .carousel>input:nth-of-type(5):checked~.carousel__thumbnails li:nth-of-type(5) {
-        box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
-    }
-
-    .carousel>input:nth-of-type(6):checked~.carousel__thumbnails li:nth-of-type(6) {
-        box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
-    }
-
-    .carousel>input:nth-of-type(7):checked~.carousel__thumbnails li:nth-of-type(7) {
-        box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
-    }
-
-
-.carousel__slides {
-  position: relative;
-  z-index: 1;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  box-sizing: border-box;
-  display: flex;
-}
-
-.carousel__slide {
-  position: relative;
-  display: block;
-  flex: 1 0 100%;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  transition: all 300ms ease-out;
-  /* vertical-align: top; */
-  box-sizing: border-box;
-  white-space: normal;
-}
-.carousel__slide figure {
-  display: flex;
-  margin: 0;
-}
-.carousel__slide div {
-  position: relative;
-  width: 100%;
-}
-.carousel__slide div:before {
-  display: block;
-  content: "";
-  width: 100%;
-  padding-top: 66.6666666667%;
-}
-.carousel__slide div > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-}
-.carousel__slide img {
-  display: block;
-  flex: 1 1 auto;
-  object-fit: cover;
-}
-.carousel__slide figcaption {
-  align-self: flex-end;
-  padding: 20px 20px 0 20px;
-  flex: 0 0 auto;
-  width: 25%;
-  min-width: 150px;
-}
-.carousel__slide .credit {
-  margin-top: 1rem;
-  color: rgba(0, 0, 0, 0.5);
-  display: block;
-}
-/* .carousel__slide.scrollable {
-  overflow-y: scroll;
-} */
-
-.carousel__thumbnails {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  margin: 0 -10px;
-}
-.carousel__slides + .carousel__thumbnails {
-  margin-top: 20px;
-}
-.carousel__thumbnails li {
-  flex: 1 1 auto;
-  max-width: calc((100% / 6) - 20px);
-  margin: 0 10px;
-  transition: all 300ms ease-in-out;
-}
-.carousel__thumbnails label {
-  display: block;
-  position: relative;
-  cursor: pointer;
-}
-.carousel__thumbnails label:before {
-  display: block;
-  content: "";
-  width: 100%;
-  padding-top: 100%;
-}
-.carousel__thumbnails label > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-}
-.carousel__thumbnails label:hover, .carousel__thumbnails label:focus {
-  cursor: pointer;
-}
-.carousel__thumbnails label:hover img, .carousel__thumbnails label:focus img {
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
-  transition: all 300ms ease-in-out;
-}
-.carousel__thumbnails img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+  
 @media (max-width: 768px) {
   .carousel__slide figcaption {
     width: 100%;
@@ -427,6 +243,35 @@
             background-color: #004bb5;
             color: white;
         }
+        .position-relative {
+    position: relative;
+}
+.text-overlay {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    gap: 187px; /* Adjust the gap between words as needed */
+    color: white;
+    font-size: 2rem; /* Adjust font size as needed */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255); /* Optional: adds a shadow to the text for better readability */
+}
+.about-section{
+    background-image: url("img/Aboutus4.jpg");
+    object-fit: fill;
+    height: 400px;
+    
+}
+.full-width-image {
+    width: 100%;
+    height: auto;
+    max-height: 350px; 
+    object-fit: fill;
+    opacity: 0.5;
+}
         @media screen and (max-width: 1200px) {
             .column {
                 width: 33.33%;
@@ -500,6 +345,102 @@
                 margin-left: -10px;
             }
         } */
+        @media (max-width: 1026px){
+            .container{
+                width: 955px;
+            }
+            .container-xxl{
+                margin-left: -9px;
+            }
+        }
+        @media(max-width: 1281px){
+            .section{
+                margin-left: -11%;
+                width: 98%;
+            }
+        }
+        @media (max-width: 1056px){
+            .text-overlay{
+                gap: 105px;
+            }
+        }
+        @media (max-width: 810px){
+            .text-overlay{
+                gap: 57px;
+            }
+        }
+        @media (max-width: 625px){
+            .text-overlay{
+                gap: 35px;
+            }
+        }
+        @media (max-width: 555px){
+            .text-overlay h3{
+                font-size: 1rem;
+            }
+
+        }
+        @media (max-width: 421px){
+            .text-overlay h3{
+                font-size: 0.7rem;
+            }
+            .text-overlay{
+                gap: 50px;
+            }
+
+        }
+        /* .category {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+} */
+
+.container {
+    max-width: 100%;
+    padding: 0;
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #f8f9fa;
+}
+
+.marquee--inner {
+    display: flex;
+    animation: marquee 15s linear infinite;
+}
+
+.marquee--inner span {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.orb {
+    padding: 10px;
+}
+
+.orb img {
+    max-width: 216px;
+    height: auto;
+    display: block;
+}
+.marquee--inner span{
+    gap: 50px;
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
     </style>
 </head>
 
@@ -668,7 +609,25 @@
                 </div>
             </div>
         </div>
+        <div class="container-xxl py-5">
+            <div class="container-fluid px-0 position-relative">
+                <div class="row g-0">
+                    <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="overflow-hidden position-relative">
+                            <img class="full-width-image" src="img/Abt1.jpg" alt="Expert Instructors">
+                            <div class="text-overlay">
+                            <h3>50K+ success Stories</h3>
+                            <h3>850+ Universities</h3>
+                            <h3>800+ Courses</h3>
+                            <h3>1000+ College</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    
     <!-- About End -->
 
 
@@ -740,124 +699,41 @@
     <!-- Categories Start -->
 
     <div class="container-xxl py-5 category">
-        <section>
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h6 class="section-title bg-white text-center text-primary px-3">Institutions</h6>
                     <h1 class="mb-5">Affiliated Institutions</h1>
                 </div>
-                <div class="carousel">
-                    <input type="radio" name="slides" checked="checked" id="slide-1">
-                    <input type="radio" name="slides" id="slide-2">
-                    <input type="radio" name="slides" id="slide-3">
-                    <input type="radio" name="slides" id="slide-4">
-                    <input type="radio" name="slides" id="slide-5">
-                    <input type="radio" name="slides" id="slide-6">
-                    <input type="radio" name="slides" id="slide-7">
-                    <ul class="carousel__slides">
-                        <li class="carousel__slide">
-                            <figure>
-                                <div>
-                                    <img src="img/Acharya.png" alt="">
-                                </div>
-                                <figcaption>
-                                    Acharya Institute Of Graduate Studies
-                                    <span class="credit">Bangalore</span>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li class="carousel__slide">
-                            <figure>
-                                <div>
-                                    <img src="img/Christ.jpg" alt="">
-                                </div>
-                                <figcaption>
-                                    Christ University
-                                    <span class="credit">Bangalore</span>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li class="carousel__slide">
-                            <figure>
-                                <div>
-                                    <img src="img/Jain.jpeg" alt="">
-                                </div>
-                                <figcaption>
-                                    Jain Deemed-to-be University
-                                    <span class="credit">Bangalore</span>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li class="carousel__slide">
-                            <figure>
-                                <div>
-                                    <img src="img/koshy.png" alt="">
-                                </div>
-                                <figcaption>
-                                    Koshys Group Of Institution
-                                    <span class="credit">Bangalore</span>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li class="carousel__slide">
-                            <figure>
-                                <div>
-                                    <img src="img/srm.jpeg" alt="">
-                                </div>
-                                <figcaption>
-                                    SRM Institute Of Science And Technology
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li class="carousel__slide">
-                            <figure>
-                                <div>
-                                    <img src="img/Reva.jpg" alt="">
-                                </div>
-                                <figcaption>
-                                    Reva University
-                                    <span class="credit">Bangalore</span>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li class="carousel__slide">
-                            <figure>
-                                <div>
-                                    <img src="img/Harsha.jpeg" alt="">
-                                </div>
-                                <figcaption>
-                                    Harsha University
-                                    <span class="credit">Bangalore</span>
-                                </figcaption>
-                            </figure>
-                        </li>
-                    </ul>
-                    <ul class="carousel__thumbnails">
-                        <li>
-                            <label for="slide-1"><img src="img/Acharya.png" alt=""></label>
-                        </li>
-                        <li>
-                            <label for="slide-2"><img src="img/Christ.jpg" alt=""></label>
-                        </li>
-                        <li>
-                            <label for="slide-3"><img src="img/Jain.jpeg" alt=""></label>
-                        </li>
-                        <li>
-                            <label for="slide-4"><img src="img/koshy.png" alt=""></label>
-                        </li>
-                        <li>
-                            <label for="slide-5"><img src="img/srm.jpeg" alt=""></label>
-                        </li>
-                        <li>
-                            <label for="slide-6"><img src="img/Reva.jpg" alt=""></label>
-                        </li>
-                        <li>
-                            <label for="slide-7"><img src="img/Harsha.jpeg" alt=""></label>
-                        </li>
-                    </ul>
+                <div class="marquee">
+                    <div class="marquee--inner">
+                      <span>
+                        <div class="orb">
+                            <a href="courses.html"> <img src="img/christ-logo.jpg" alt="christ"/></a>
+                        </div>
+                        <div class="orb">
+                            <a href="courses.html">  <img src="img/jain-logo.jpg" alt="christ"/>  </a>
+                        </div>
+                        <div class="orb">
+                            <a href="courses.html">  <img src="img/srm-logo.jpg" alt="christ"/></a>
+                        </div>
+                        <div class="orb">
+                            <a href="courses.html"><img src="img/Acharya-logo.jpg" alt="christ"/></a>
+                        </div>
+                        <div class="orb">
+                            <a href="courses.html"> <img src="img/koshy-logo.png" alt="christ"/></a>
+                        </div>
+                        <div class="orb">
+                            <a href="courses.html">  <img src="img/Reva-logo.jpg" alt="christ"/></a>
+                        </div>
+                        <div class="orb">
+                            <a href="courses.html">  <img src="img/harsha-logo.png" alt="christ"/></a>
+                        </div>
+                      </span>
+                  
+                    </div>
+                  </div>
                 </div>
             </div>
-        </section>
     </div>
     
 
